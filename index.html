@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mniam Mniam</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#1f1f1f;
+color:white;
+}
+
+header{
+text-align:center;
+padding:30px 20px;
+background:#111;
+}
+
+header img{
+width:220px;
+max-width:90%;
+border-radius:20px;
+}
+
+header h1{
+font-size:48px;
+margin-top:15px;
+color:#ffb300;
+}
+
+section{
+padding:30px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+font-size:36px;
+margin-bottom:20px;
+color:#ffb300;
+text-align:center;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#2b2b2b;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+.card h3{
+color:#ffb300;
+margin-bottom:15px;
+}
+
+.card ul{
+list-style:none;
+}
+
+.card li{
+padding:8px 0;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.koszyk{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#ffb300;
+color:black;
+padding:15px 25px;
+border-radius:50px;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+padding:40px 20px;
+text-align:center;
+}
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:15px;
+margin-top:20px;
+}
+
+button{
+background:#ffb300;
+border:none;
+padding:8px 15px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+}
+
+select{
+width:100%;
+padding:8px;
+margin-top:10px;
+border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" alt="Mniam Mniam Logo">
+
+<h1>Mniam Mniam</h1>
+
+<p>Najsmaczniejsze jedzenie w Grocholicach</p>
+
+</header>
+
+<section>
+
+<h2>🍔 Na Ciepło</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<h3>Burgery</h3>
+<ul>
+<li>Burger wołowina — 18 zł</li>
+<li>Burger kurczak — 17 zł</li>
+<li>Smash Burger — 24 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Kebaby</h3>
+<ul>
+<li>Kebab wołowina — 18 zł</li>
+<li>Kebab kurczak — 17 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Hot Dogi</h3>
+<ul>
+<li>Hot Dog — 8 zł</li>
+<li>Hot Dog amerykański — 12 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Zapiekanki</h3>
+<ul>
+<li>Tradycyjna — 14 zł</li>
+<li>Hawajska — 15 zł</li>
+<li>Włoska — 18 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Dodatki</h3>
+<ul>
+<li>Frytki małe — 6 zł</li>
+<li>Frytki duże — 9 zł</li>
+<li>Cheese Bacon Fries — 13 zł</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🥤 Napoje</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<h3>Herbata</h3>
+<ul>
+<li>Czarna — 5 zł</li>
+<li>Zielona — 5 zł</li>
+<li>Owocowa — 7 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Kawa</h3>
+<ul>
+<li>Espresso — 5 zł</li>
+<li>Americano — 7 zł</li>
+<li>Latte — 10 zł</li>
+<li>Mrożone Latte — 12 zł</li>
+<li>Mrożone Americano — 9 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Smoothie</h3>
+<ul>
+<li>Bananowe — 9 zł</li>
+<li>Truskawkowe — 9 zł</li>
+<li>Bananowo-truskawkowe — 10 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Matcha</h3>
+<ul>
+<li>Tradycyjna — 11 zł</li>
+<li>Truskawkowa — 12 zł</li>
+<li>Bananowo-czekoladowa — 13 zł</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Shake</h3>
+<ul>
+<li>Waniliowy — 10 zł</li>
+<li>Truskawkowy — 10 zł</li>
+<li>Czekoladowy — 10 zł</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🍨 Desery</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<h3>Lody</h3>
+<ul>
+<li>Gałka lodów — 4 zł</li>
+<li>Deser lodowy mały — 12 zł</li>
+<li>Deser lodowy duży — 15 zł</li>
+</ul>
+
+<select>
+<option>Czekoladowy</option>
+<option>Truskawkowy</option>
+<option>Oreo</option>
+</select>
+
+<button>Dodaj do koszyka</button>
+
+</div>
+
+<div class="card">
+
+<h3>Gofr z dodatkami</h3>
+
+<p>Cena bazowa: 8 zł</p>
+
+<label>
+<input type="checkbox">
+Cukier puder (+1 zł)
+</label><br>
+
+<label>
+<input type="checkbox">
+Owoce (+2 zł)
+</label><br>
+
+<label>
+<input type="checkbox">
+Bita śmietana (+1 zł)
+</label><br>
+
+<label>
+<input type="checkbox">
+Sos czekoladowy (+1 zł)
+</label><br>
+
+<label>
+<input type="checkbox">
+Sos truskawkowy (+1 zł)
+</label>
+
+<br><br>
+
+<button>Dodaj do koszyka</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>⭐ Zestawy</h2>
+
+<div class="card">
+
+<ul>
+
+<li>1. Burger wołowina + frytki małe + napój — 27 zł</li>
+
+<li>2. Kebab kurczak + napój + lód — 25 zł</li>
+
+<li>3. Smash Burger + frytki małe + napój — 34 zł</li>
+
+<li>4. Hot Dog amerykański + frytki małe + napój — 20 zł</li>
+
+<li>5. Zapiekanka tradycyjna + napój + lód — 21 zł</li>
+
+<li>6. Gofr + shake + gałka lodów — 19 zł</li>
+
+<li>7. Latte + gofr — 16 zł</li>
+
+<li>8. Smoothie bananowo-truskawkowe + lód — 13 zł</li>
+
+<li>9. Smash Burger + Cheese Bacon Fries + napój — 39 zł</li>
+
+<li>10. Burger wołowina x2 + frytki duże + napoje x2 — 58 zł</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>📞 Kontakt</h2>
+
+<p><strong>Telefon:</strong> 790 879 968</p>
+
+<br>
+
+<p><strong>BLIK:</strong> 790 879 968</p>
+
+<br>
+
+<p>
+Cicha 11<br>
+Grocholice<br>
+97-400 Bełchatów
+</p>
+
+<iframe
+src="https://maps.google.com/maps?q=Cicha%2011%20Grocholice&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</footer>
+
+<div class="koszyk">
+🛒 Koszyk
+</div>
+
+</body>
+</html>
